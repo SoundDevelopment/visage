@@ -66,7 +66,7 @@ add_library(visage STATIC
   ${DUMMY_FILE}
 )
 
-target_include_directories(visage SYSTEM PUBLIC ${VISAGE_INCLUDE_PATH} ${VISAGE_INCLUDE})
+target_include_directories(visage PUBLIC ${VISAGE_INCLUDE_PATH} ${VISAGE_INCLUDE})
 target_link_libraries(visage PRIVATE
   VisageApp
   VisageGraphics
